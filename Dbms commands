@@ -1,0 +1,40 @@
+create table e1(Eno number(3), ename varchar(20));
+
+insert into e1 values(101,'Ankit',50000);
+
+insert into e1 values(102,'Basu',60000);
+
+insert into e1 values(103,'Rohit',70000);
+
+insert into e1 values(104,'Suman',80000,'Delhi');
+
+desc e1;
+
+select * from e1;
+
+alter table e1 add (city varchar(5));
+
+alter table e1 drop (city);
+
+alter table e1 modify (ename varchar(10));
+
+delete from e1;
+
+truncate table e1;
+
+delete from e1 where eno=103;
+
+update e1 set city='Agra' where eno= 103;
+
+update e1 set city='delhi';
+
+select max(salary) from e1;
+
+select min(salary) from e1;
+
+select avg(salary) from e1;
+
+select sum(salary) from e1;
+
+select count(salary) from e1;
+
